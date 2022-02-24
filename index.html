@@ -1,21 +1,94 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Shadow IO:Net's favourite geek</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <style media="screen">
-      section {
-        padding: 60px 0;
-      }
-    </style>
-  </head>
-  <body class="bg-black text-white">
-    <!--navbar-->
-    <nav class="navbar navbar-expand-md navbar-light">
+<head>
+	<title>IO CodesAlot:The Net's favourite geek!</title>
+<!--<link rel="stylesheet" href="css/main.css">-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!--<?php include 'css/indexstyles.php'; ?>-->
+<style>
+  .profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  position:absolute;
+  top: 22%;
+  left: 92%;
+  object-fit: contain;
+  transform: translate(-50%, -50%);
+  transition: 2s;
+}
+.profile:hover {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  top: 40%;
+  left: 80%;
+  border-radius: 0;
+}
+.greetings {
+  display: inline;
+}
+.wtext {
+  font-size: 100px;
+  font-weight: bold;
+  animation: wiggle 2.6s linear infinite;
+}
+.wtext:hover {
+  color: orange;
+}
+.name {
+  display: flex;
+}
+
+@keyframes wiggle {
+  30% {
+
+  }
+  60% {
+    text-shadow: 3px 7px 20px purple;
+    transform: translateY(50px);
+  }
+  100% {
+
+  }
+}
+.wtext:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.wtext:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.wtext:nth-child(3) {
+  animation-delay: 1s;
+}
+.wtext:nth-child(4) {
+  animation-delay: 1.4s;
+}
+.wtext:nth-child(5) {
+  animation-delay: 1.8s;
+}
+.wtext:nth-child(6) {
+  animation-delay: 2.2s;
+}
+.wtext:nth-child(7) {
+  animation-delay: 2.6s;
+
+}
+</style>
+<style media="screen">
+body {
+  overflow-x: hidden !important;
+}
+  section {
+    padding: 60px 0;
+  }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-light">
       <div class="container-lg">
         <a href="#introduction" class="navbar-brand">
-          <span class="fw-bold text-white">IOCodesalot</span>
+          <span class="fw-bold text-mute">IOCodesalot</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -28,10 +101,10 @@
             <a href="#skills" class="nav-link">My skills</a>
             </li>
             <li class="nav-item">
-            <a href="#reviews" class="nav-link">Reviews</a>
+            <a href="#projects" class="nav-link">Projects</a>
             </li>
             <li class="nav-item">
-            <a href="#Pricing" class="nav-link">Pricing</a>
+            <a href="#pricing" class="nav-link">Pricing</a>
             </li>
             <li class="nav-item ms-2 d-none d-md-inline">
             <a href="#contact" class="btn btn-warning text-white">Contact Me</a>
@@ -41,30 +114,225 @@
       </div>
     </nav>
 
-    <!--introduction-->
-    <section id="introduction">
-      <div class="container-lg">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-md-5 text-center text-md-start">
-            <h1>
-            <div class="display-2 text-decoration-underline">Hi, I'm Shadow</div>
-            <div class="display-5 text-muted">Web developer</div>
-            </h1>
-            <p class="lead my-3 text-muted">Let me tell you a little about myself.My full name is Shadow Mofeleng Mokgope, yeah my first name is kinda weird :)but hey, it is what it is
-            All you need to know about me is that I'm just a 16 year old from South Africa who loves to code,and I'd love to work with you on your next project!
-           contact me now!</p>
-           <a href="#contact" class="btn btn-warning text-white btn-lg">Contact</a>
+    <section id="into">
+    <div class="greetings container-lg justify-content-center align-items-center my-3">
+      <div class="row">
+      <div class="d-none d-lg-block col-lg-6 text-start">
+        <span class="wtext">H</span>
+        <span class="wtext">i</span>
+
+
+      <div class="name">
+        <h2>I'm</h2>
+        <span class="wtext">S</span>
+        <span class="wtext">H</span>
+        <span class="wtext">A</span>
+        <span class="wtext">D</span>
+        <span class="wtext">O</span>
+        <span class="wtext">W</span>
+      </div>
+      </div>
+      <div class="col-lg-3 col-md-12 my-md-4">
+    <p class="intro">
+      Let me tell you a little about myself.My full name is Shadow Mofeleng Mokgope, yeah my first name is kinda weird :)but hey, it is what it is
+      All you need to know about me is that I'm just a 16 year old from South Africa who loves to code,and I'd love to work with you on your next project!
+      <a href="contactpage.php" style="text-decoration: none; color: orange"> contact me now!</a>
+    </p>
+    </div>
+    <div class="col-lg-2 col-md-12 my-md-4 profile_image">
+      <img class="rounded img-fluid" src="assets/profile.jpg"  >
+    </div>
+
+    </div>
+
+
+    </div>
+    </div>
+  </section>
+
+<!--my skills-->
+<section id="skills" class="bg-light">
+  <div class="container-lg">
+    <div class="text-center">
+      <h2>My skillset</h2>
+      <p class="lead text-mute">Here are some of my programming skills...</p>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="list-group">
+
+          <div class="list-group-item py-3">
+            <h5 class="mb-1">Hyper Text Markup Language</h5>
+            <p class="mb-1">I have been coding in HTML for 3 years, so I know almost everything about it, I have the most experience in:</p>
+            <small>
+              <ul>
+                <li>HTML Canvas</li>
+                <li>Content Models</li>
+                <li>Document Structures</li>
+              </ul>
+            </small>
           </div>
 
-          <div class="col-md-5 text-center d-md-block justify-content-end">
-            <img class="img-fluid" src="assets/profile.jpg" alt="Photo of Shadow IO">
+          <div class="list-group-item py-3">
+            <h5 class="mb-1">CSS</h5>
+            <p class="mb-1">I have also been coding in CSS for 3 years, I have the most experience in:</p>
+            <small>
+              <ul>
+                <li>Properties</li>
+                <li>Positioning and layout</li>
+                <li>CSS3</li>
+                <li>Gradients & backgrounds</li>
+                <li>Transitions and transforms</li>
+                <li>Filters</li>
+              </ul>
+            </small>
           </div>
+
+          <div class="list-group-item py-3">
+            <h5 class="mb-1">Javascript</h5>
+            <p class="mb-1">I have been coding in javascript for 2 years, javascript was the first programming language I learnt, my js skills include:</p>
+            <small>
+              <ul>
+                <li>Working with Objects</li>
+                <li>Working with core objects</li>
+                <li>DOM & events</li>
+                <li>ECMAScript 6</li>
+                <li>Javascript Canvas</li>
+              </ul>
+            </small>
+          </div>
+
+          <div class="list-group-item py-3">
+            <h5 class="mb-1">PHP: Hypertext Preprocessor</h5>
+            <p class="mb-1">I have 6 months of experience in php, and it's been amazing, I make most of my websites in PHP, but I'm open to other languages, My skills in PHP include:</p>
+            <small>
+              <ul>
+                <li>Control Structures</li>
+                <li>Working with files</li>
+                <li>Object Oriented PHP</li>
+                <li>working with sqli databases</li>
+              </ul>
+            </small>
+          </div>
+
+          <div class="list-group-item py-3">
+            <h5 class="mb-1">Structured Query Language</h5>
+            <p class="mb-1">I use sql databases for all of my websites/p>
+            <small>
+              <ul>
+                <li>AJAX</li>
+                <li>Manipulating CSS</li>
+                <li>Manipulating DOM</li>
+                <li>Events</li>
+                <li>Effects</li>
+              </ul>
+            </small>
+          </div>
+
+          <div class="list-group-item py-3">
+            <h5 class="mb-1">Bootstrap</h5>
+            <p class="mb-1">Bootstrap is a new addition to my programming toolkit, some of the things I have mastered are/p>
+            <small>
+              <ul>
+                <li>Off canvas</li>
+                <li>Icons</li>
+                <li>Custom Styles</li>
+                <li>Grid Layout</li>
+                <li>Modals</li>
+              </ul>
+            </small>
+          </div>
+
         </div>
       </div>
-    </section>
-    <!-- pricing plans -->
+    </div>
+  </div>
+</section>
+<!--projects-->
+<section id="projects">
+  <div class="container-lg">
+    <div class="text-center">
+      <h2>My Projects</h2>
+      <p>Here are my projects</p>
+    </div>
+
+    <!--Add cards with images and buttons-->
+
+  </div>
+</section>
+
+<!--pricing -->
+<section id="pricing" class="bg-light">
+  <div class="container-lg">
+    <div class="text-center">
+      <h2>Pricing Plans</h2>
+      <p class="lead text-mute">pricing plans are negotiable</p>
+    </div>
+    <div class="row my-5 justify-content-center align-item-center g-0">
+      <div class="col-8 col-lg-4 col-xl-3">
+        <div class="card border-0">
+            <div class="card-body text-center py-4">
+                <h4 class="card-title">Landing site</h4>
+                <p class="card-subtitle lead">Landing Site for product or service, no database</p>
+                <p class="display-5 my-4 text-secondary fw-bold">$150-$300</p>
+                <ul>
+                  <li>3 Revisions available</li>
+                  <li>Maximum of 3 pages</li>
+                  <li>Complete within 2 Weeks</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-9 col-lg-4 ">
+          <div class="card border-warning border-2 border-sm-0">
+            <div class="card-header text-center text-white bg-warning">Popular</div>
+            <div class="card-body text-center py-4">
+              <h4 class="card-title">Standard Website</h4>
+              <p class="lead card-subtitle">Blogs,vlogs, Information sites,school websites, etc. </p>
+              <p class="display-5 my-4 text-secondary fw-bold">$400 - $1000</p>
+              <ul>
+                <li>10 Revisions available</li>
+                <li>Maximum of 9 pages</li>
+                <li>Complete within 3 Weeks</li>
+              </ul>
+            </div>
+          </div>
+</div>
+          <div class="col-8 col-lg-4 col-xl-3">
+            <div class="card border-0">
+                <div class="card-body text-center py-4">
+                    <h4 class="card-title">Database Site</h4>
+                    <p class="card-subtitle lead">Full Website with database dependencies.</p>
+                    <p class="display-5 my-4 text-secondary fw-bold">$2000+</p>
+                    <ul>
+                      <li>7 Revisions available</li>
+                      <li>Unlimited pages</li>
+                      <li>Complete within 4 Weeks</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--contact -->
+<section id="contact">
+  <div class="container-lg">
+    <div class="text-center">
+      <h2>Contact Us</h2>
+      <p class="lead">Get in touch, I'd like to hear from you :)</p>
+    </div>
+    <div class="text-center">
+      <small class="text-muted">WA: 068 014 4443</small><br>
+      <small class="text-muted">Mail: <a href="mailto: iocodesalot@gmail.com" class="text-muted text-decoration-none">iocodesalot@gmail.com</a></small>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
 </html>
